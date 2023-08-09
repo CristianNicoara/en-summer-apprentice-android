@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-32dp"
+            tools:layout_editor_absoluteY="355dp">
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="205dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="120dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventName" />
+
+            <TextView
+                android:id="@+id/eventDescription"
+                android:layout_width="83dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/eventImage"
+                app:layout_constraintTop_toBottomOf="@+id/eventName"
+                app:layout_constraintVertical_bias="0.648" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="169dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/numberOfTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:hint="Number of Tickets"
+                    android:inputType="numberDecimal" />
+
+                <Spinner
+                    android:id="@+id/selectTicketCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:elevation="8dp"/>
+
+                <Button
+                    android:id="@+id/buyTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:text="Buy" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
