@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:title="Search Location"-->
+<!--        android:id="@+id/search_location"-->
+<!--        android:icon="@drawable/baseline_search_24"-->
+<!--        android:queryHint="Location Name"-->
+<!--        app:actionViewClass="android.widget.SearchView"-->
+<!--        app:showAsAction="ifRoom|collapseActionView" />-->
+
+<!--    <item-->
+<!--        android:title="Search Type"-->
+<!--        android:id="@+id/search_type"-->
+<!--        android:icon="@drawable/baseline_search_24"-->
+<!--        android:queryHint="Event Type"-->
+<!--        app:actionViewClass="android.widget.SearchView"-->
+<!--        app:showAsAction="ifRoom|collapseActionView" />-->
+
+        <item
+            android:title="Account"
+            android:id="@+id/account"
+            android:icon="@drawable/baseline_account_circle_24"
+            app:showAsAction="always"
+            />
+</menu>

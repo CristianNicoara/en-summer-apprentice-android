@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TMS</string>
+    <string name="title_activity_orders">OrdersActivity</string>
+</resources>
